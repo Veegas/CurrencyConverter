@@ -1,0 +1,48 @@
+<section class="app">
+
+  <div class="app__container container">
+    <h1 class="app__title text-center">
+      Currency Converter
+    </h1>
+  </div>
+  <form [formGroup]="currencyForm" (ngSubmit)="convertCurrency(currencyForm)">
+    <div class="container d-flex justify-content-center flex-column">
+
+      <div class="p-2">
+        <div class="form-group">
+          <label class="form-label" for="baseCurrency">Base Currency </label>
+          <input type="text" class="form-control" name="baseCurrency" formControlName="toBeConverted.baseCurrency" [(ngModel)]="toBeConverted.baseCurrency"
+          [ngbTypeahead]="searchCurrencies" #instance="ngbTypeahead" />
+        </div>
+      </div>
+      
+      <div class="p-2">
+        <div class="form-group">
+          <label class="form-label" for="baseAmount">Base Amount </label>
+          <input type="number" class="form-control" name="baseAmount" placeholder="Base Amount" autofocus="" formControlName="toBeConverted.baseAmount"
+          [(ngModel)]="toBeConverted.baseAmount">
+        </div>
+      </div>
+      
+      <div class="p-2">
+        <div class="form-group">
+            <label class="form-label" for="targetCurrency">Target Currency </label>
+          <input type="text" class="form-control" name="targetCurrency" placeholder="Target Currency" autofocus="" formControlName="toBeConverted.targetCurrency"
+            [(ngModel)]="toBeConverted.targetCurrency" [ngbTypeahead]="searchCurrencies" #instance="ngbTypeahead">
+        </div>
+      </div>
+
+      <div class="p-2">
+        <div class="form-group">
+          <input type="number" class="form-control" name="targetAmount" placeholder="Target Amount" autofocus="" disabled [ngModelOptions]="{standalone: true}"
+            [(ngModel)]="toBeConverted.targetAmount">
+        </div>
+      </div>
+
+      <div class="p-2 align-self-center">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+
+</section>

@@ -1,0 +1,7 @@
+/media/data/Web Development/SpringWorkspace/currencyConverter/src/main/java/com/example/currency/controllers/CurrencyController.java
+/media/data/Web Development/SpringWorkspace/currencyConverter/src/main/java/com/example/currency/models/Converter.java
+/media/data/Web Development/SpringWorkspace/currencyConverter/src/main/java/com/example/currency/services/ConverterService.java
+/media/data/Web Development/SpringWorkspace/currencyConverter/src/main/java/com/example/currency/services/RatesService.java
+/media/data/Web Development/SpringWorkspace/currencyConverter/src/main/java/com/example/currency/exceptions/BadRequestException.java
+/media/data/Web Development/SpringWorkspace/currencyConverter/src/main/java/com/example/currency/CurrencyConverterApplication.java
+/media/data/Web Development/SpringWorkspace/currencyConverter/src/main/java/com/example/currency/models/Rate.java

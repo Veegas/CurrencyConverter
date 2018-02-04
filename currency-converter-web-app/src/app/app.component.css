@@ -1,0 +1,20 @@
+.app {
+    height: 100vh;
+    background-color: azure;
+}
+
+.app__container {
+    padding: 5% 0;
+}
+
+.ng-valid.ng-dirty {
+    border-color: rgb(110, 230, 110);
+}
+
+.ng-invalid {
+    border-color: brown;
+}
+
+.form-label {
+    color: grey;
+}

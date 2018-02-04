@@ -1,0 +1,7 @@
+version: '2.1'
+services:
+  converter-api:
+    build: ./
+    image: currency-converter
+    ports: 
+    -  8080:8080
